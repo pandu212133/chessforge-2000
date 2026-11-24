@@ -1,0 +1,1 @@
+Upload index.html, app.js, importer.js, sw.js, review.js. Existing icons, style and engine remain. Stockfish is optional and not bundled: install a compatible single-thread UCI browser worker named stockfish.js and its accompanying WASM assets from its upstream distribution. Replay works without it.
