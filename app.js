@@ -1,4 +1,4 @@
-import {openReview,initReview} from './review.js?v=045';
+import {openReview,initReview} from './review.js?v=050';
 import {parseFen,apply,legal,uci,san,sq,side,checked,START} from './engine.js';
 import {storedGames,parsePGN,mergeGames,fetchRecent,summarize} from './importer.js?v=045';
 const puzzles=[
@@ -7,7 +7,7 @@ const puzzles=[
  {name:'Queen checkmate',fen:'7k/6pp/5KQ1/8/8/8/8/8 w - - 0 1',answer:'g6g7',explain:'Qg7# is protected by the king on f6.',level:'Basic'},
  {name:'Find the knight attack',fen:'8/3q1k2/8/8/8/5N2/8/4K3 w - - 0 1',answer:'f3e5',explain:'Ne5+ checks the king on f7 and forks the queen on d7.',level:'Intermediate'}
 ];
-const $=id=>document.getElementById(id),glyph={K:'♔',Q:'♕',R:'♖',B:'♗',N:'♘',P:'♙',k:'♚',q:'♛',r:'♜',b:'♝',n:'♞',p:'♟︎'};
+const $=id=>document.getElementById(id),glyph={K:'♚',Q:'♛',R:'♜',B:'♝',N:'♞',P:'♟︎',k:'♚',q:'♛',r:'♜',b:'♝',n:'♞',p:'♟︎'};
 let store;try{store=JSON.parse(localStorage.getItem('cf2000-progress')||'{}')}catch{store={}};
 let state=parseFen(START),history=[state],selected=-1,mode='practice',puzzle=0,solved=false,attempted=false;
 function save(){try{localStorage.setItem('cf2000-progress',JSON.stringify(store))}catch{}}
