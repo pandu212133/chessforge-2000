@@ -1,6 +1,6 @@
-import {openReview,initReview} from './review.js?v=040';
+import {openReview,initReview} from './review.js?v=045';
 import {parseFen,apply,legal,uci,san,sq,side,checked,START} from './engine.js';
-import {storedGames,parsePGN,mergeGames,fetchRecent,summarize} from './importer.js?v=040';
+import {storedGames,parsePGN,mergeGames,fetchRecent,summarize} from './importer.js?v=045';
 const puzzles=[
  {name:'Back-rank checkmate',fen:'6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1',answer:'e1e8',explain:'Re8# exploits the trapped king on the back rank.',level:'Basic'},
  {name:'Mate in one',fen:'6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1',answer:'e1e8',explain:'The rook attacks the king along the eighth rank.',level:'Basic'},
