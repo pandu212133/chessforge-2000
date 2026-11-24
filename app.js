@@ -1,4 +1,4 @@
-import {openReview,initReview} from './review.js?v=050';
+import {openReview,initReview} from './review.js?v=060';
 import {parseFen,apply,legal,uci,san,sq,side,checked,START} from './engine.js';
 import {storedGames,parsePGN,mergeGames,fetchRecent,summarize} from './importer.js?v=045';
 const puzzles=[
